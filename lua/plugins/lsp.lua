@@ -7,7 +7,7 @@ return {
     config = function()
         require('mason').setup()
         require('mason-lspconfig').setup {
-            ensure_installed = { "lua_ls", "clangd", "ts_ls" },
+            ensure_installed = { "lua_ls", "clangd", "ts_ls", "pyright" },
         }
         require('lspconfig').lua_ls.setup{
             settings = {
@@ -19,5 +19,6 @@ return {
         }
         require('lspconfig').clangd.setup{}
         require('lspconfig').ts_ls.setup{}
+        require('lspconfig').pyright.setup{}
     end
 }

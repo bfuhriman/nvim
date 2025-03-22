@@ -1,14 +1,14 @@
 -- Open the netrw file explorer
 vim.keymap.set("n", "<leader>e", ":Explore<CR>")
 
--- Toggle between normal and insert
-vim.keymap.set("i", "<Esc>", "<Esc>")
+-- Toggle between normal and inset
 vim.keymap.set("n", "<Esc>", "i")
 
 -- Set indentation from anywhere in the line
 vim.keymap.set("n", "<Tab>", "==")
 
--- Go to end of current line
+-- Go to beginning/end of current line
+vim.keymap.set("n", "B", "^")
 vim.keymap.set("n", "E", "$")
 
 -- Move the cursor in insert mode
